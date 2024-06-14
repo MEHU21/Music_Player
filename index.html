@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrooveHaven - Your Personal Music Paradise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="GrooveHaven Logo"> GrooveHaven</li>
+            <li>Home</li>
+            <li><input type="text" id="search" placeholder="Search for songs..."></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>My all time favorites</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="1" src="covers/1.jpeg">
+                    <span class="songName">Golden hour</span>
+                    <span class="songlistplay"><span class="timestamp">03:51 <i id="0" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="2" src="covers/2.jpeg">
+                    <span class="songName">Loosu Penne</span>
+                    <span class="songlistplay"><span class="timestamp">06:47 <i id="1" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1" src="covers/1.jpeg">
+                    <span class="songName">Vaarayo Vaarayo</span>
+                    <span class="songlistplay"><span class="timestamp">05:16 <i id="0" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1" src="covers/1.jpeg">
+                    <span class="songName">Anbe en Anbe</span>
+                    <span class="songlistplay"><span class="timestamp">05:04 <i id="0" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <!-- Add more song items here -->
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+            <i class="fas fa-3x fa-redo" id="repeat"></i> <!-- Repeat button -->
+            <i class="fas fa-3x fa-random" id="shuffle"></i> <!-- Shuffle button -->
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
